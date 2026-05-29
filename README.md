@@ -1,8 +1,8 @@
 <div align="center">
 
-# dining.skill
+# 吃什么.skill
 
-> *「Before you starve or scroll — let the algorithm decide」*
+> *「在饥饿与纠结之间，算法替你决定」*
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Claude Skill](https://img.shields.io/badge/Claude-Skill-blueviolet)](https://claude.ai)
@@ -13,119 +13,119 @@
 
 <br>
 
-**An AI skill that decides what you should eat today.**
+**一个帮你决定今天吃什么的 AI 技能。**
 
 <br>
 
-[Quick Start](#quick-start) · [The Problem It Solves](#the-problem-it-solves) · [What It Can Do](#what-it-can-do) · [Install](#install) · [File Structure](#file-structure)
+[快速开始](#快速开始) · [它解决了什么问题](#它解决了什么问题) · [能干什么](#能干什么) · [安装方式](#安装方式) · [文件结构](#文件结构)
 
 <br>
 
-**其他语言 / Other Languages：** [中文](README_CN.md)
+**其他语言 / Other Languages：** [English](README_EN.md)
 
 </div>
 
 ---
 
-## Quick Start
+## 快速开始
 
-Once installed, just say:
+装好之后，对你的 AI 助手说：
 
 ```
-what should I eat
-3 people, cooking at home, no lamb
+今天吃什么
+3个人，下厨，不要辣
 ```
 
-That's it.
+就行了。
 
 ---
 
-## The Problem It Solves
+## 它解决了什么问题
 
-Everyone faces the same question every single day: what should I eat.
+每个人每天都要面对一个问题：今天吃什么。
 
-Cooking at home: what dishes to make? Ordering delivery: scrolling for 30 minutes, still can't decide. Hosting a dinner: how many dishes? Which ones? Trying to eat healthy: you're hungry but scared of calories, so you end up eating nothing or something boring.
+自己做饭的时候，不知道做什么菜。点外卖的时候，刷半小时不知道点啥。请客吃饭的时候，更不知道该做多少菜、做什么菜才有排面。减肥的时候，想吃又怕胖，纠结半天最后随便对付一口。
 
-This isn't you being indecisive. Behavioral economists call it the "paradox of choice" — too many options, brain shuts down.
+这不是你选择困难。行为经济学家管这个叫"选择悖论"：选项太多了，人的大脑会直接卡住。
 
-This skill fixes that. Tell it how many people, cooking or delivery, any dietary restrictions, any special needs. It gives you concrete answers. Not more options. Just what to eat.
-
----
-
-## What It Can Do
-
-**Everyday meals**
-
-Tell it the basics — headcount, home cooking or delivery, what you don't eat. It gives you two complete meal plans with clear dish names. If you're cooking, it also tells you what to cook first, what can run in parallel, and how to time everything.
-
-**Special situations**
-
-Hot pot night? It recommends broth bases and a shopping list organized by cooking time. Full vegetarian? It swaps meat with a plant-protein chain and picks dishes that feel substantial. Cutting weight? It gives you low-cal, high-protein options with calorie estimates. Camping? It picks portable, no-refrigeration-needed dishes.
-
-**Hosting and gatherings**
-
-Family dinner, business banquet, old friends reunion — it adjusts the style automatically. Family meals lean warm and homey. Business dinners lean refined and impressive. Friend gatherings lean bold and shareable. Kids at the table? It automatically adds a sweet or sweet-and-sour dish they'll actually eat.
-
-**Remembers what you like**
-
-Tell it once "I'm from Sichuan, I love spicy food." It remembers. Tell it "red-braised pork only at family dinners, don't suggest it otherwise." It adjusts. The more you use it, the more it feels like it knows you.
-
-**Four perspectives on every meal**
-
-Every recommendation gets reviewed from four angles: health safety (like "no seafood for gout"), nutritional balance, fitness goals, and emotional satisfaction. They give you different takes on the same meal plan — one might say "Plan B is better for your cut," another might say "but Plan A is what you actually need after a rough day."
-
-**Delivery-smart**
-
-Not all dishes survive delivery. Steamed fish gets cold. Fried chicken goes soggy. Noodles clump together. This skill knows which dishes travel well and which don't. When you're ordering delivery, it automatically avoids the risky ones.
+这个 skill 就是帮你做这个决定的。你告诉它有多少人吃饭、想自己做还是点外卖、有什么忌口、有没有什么特别需求，它直接告诉你要吃什么。不给你一堆选项让你继续纠结，就给你确定的答案。
 
 ---
 
-## Install
+## 能干什么
 
-### Method 1: npx (Recommended)
+**日常吃饭**
+
+告诉它几个人、自己做还是点外卖、不吃什么，它给你两套菜单，每道菜都写得清清楚楚。如果自己做，还会告诉你先做哪个后做哪个，怎么安排时间最合理。
+
+**特殊场景**
+
+吃火锅：推荐锅底和涮菜清单。吃全素：推荐植物蛋白替代肉类的菜品。减肥期：推荐低卡高蛋白的搭配，标注卡路里。露营：推荐方便携带、不用冷藏的菜。
+
+**请客聚餐**
+
+家庭聚会、商务宴请、同学叙旧，它会根据场合调整菜品风格。家庭聚会偏温馨家常，商务宴请偏精致有排面，同学聚会偏下酒下饭。有小孩在场会自动加一道酸甜口的菜。
+
+**记住你的口味**
+
+你告诉它一次"我是四川人，喜欢吃辣"，下次它就记住了。你说"红烧肉只适合家庭聚餐，别的时候别推"，它就调整。用得越久，推荐越对你的胃口。
+
+**有四个角色帮你把关**
+
+每次推荐菜单的时候，系统会用四个角色的视角来审视：一个关注健康安全（比如痛风不能吃海鲜），一个关注营养均衡，一个关注健身目标，一个关注你的情绪和满足感。他们会从各自的角度给意见，比如健身的觉得方案二更低脂，但心理的觉得方案一今天更让你开心。
+
+**外卖也懂**
+
+不是所有菜都适合外卖。清蒸鱼送过来可能凉了，炸鸡送过来可能软了，面条会坨。这个 skill 知道哪些菜外卖友好、哪些菜建议堂食，点外卖的时候会自动避开容易翻车的菜。
+
+---
+
+## 安装方式
+
+### 方式一：npx 安装（推荐）
 
 ```bash
 npx skills add ChenChen913/dining-skill
 ```
 
-### Method 2: Git Clone
+### 方式二：GitHub 下载安装
 
 ```bash
 git clone https://github.com/ChenChen913/dining-skill.git
 cp -r dining-skill ~/.claude/skills/dining
 ```
 
-Or download ZIP from [GitHub Releases](https://github.com/ChenChen913/dining-skill/releases), extract to your AI assistant's skills directory:
-- Claude Code: `~/.claude/skills/dining/`
-- Reasonix Code: `~/.reasonix/skills/dining/`
+或者从 [GitHub Releases](https://github.com/ChenChen913/dining-skill/releases) 下载 ZIP 包，解压后放到 AI 助手的 skills 目录。
+- Claude Code：`~/.claude/skills/dining/`
+- Reasonix Code：`~/.reasonix/skills/dining/`
 
-### Method 3: Ask Your AI to Do It
+### 方式三：告诉 AI 帮你装
 
-Send the repo URL to your AI assistant:
+把项目地址发给 AI 助手，让它自己操作：
 
 ```
-Clone https://github.com/ChenChen913/dining-skill and install it to my skills directory
+帮我把 https://github.com/ChenChen913/dining-skill 克隆到本地，然后装到 skills 目录
 ```
 
 ---
 
-## File Structure
+## 文件结构
 
 ```
 dining-skill/
-├── SKILL.md                     # Main file
-├── references/                  # Rules and templates
+├── SKILL.md                     # 主文件
+├── references/                  # 规则和模板
 │   ├── mode-routing.md
 │   ├── algorithm-engine.md
-│   ├── cuisine-profiles.md      # 10 cuisines database
+│   ├── cuisine-profiles.md      # 十大菜系数据
 │   ├── expert-cabinet.md
 │   ├── memory-system.md
 │   ├── output-schema.md
 │   └── heuristics.md
 ├── assets/
-│   └── dishes-reference.md      # 74-dish lookup table
+│   └── dishes-reference.md      # 74道菜品速查表
 ├── README.md
-└── README_CN.md
+└── README_EN.md
 ```
 
 ---
